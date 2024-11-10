@@ -1,0 +1,13 @@
+modules:
+  http_2xx:
+    prober: http
+    timeout: 5s
+    valid_http_versions: [ "1.1", "2"]
+    valid_http_methods: [ "GET"]
+    headers:
+      User-Agent: "Blackbox Exporter"
+    tcp_connect_timeout: 5s
+    http:
+      method: GET
+      valid_http_status_codes: []
+      body: ""
