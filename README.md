@@ -8,3 +8,9 @@
 в inventory.ini свой хост и ssh-ключ
 
 ### CI/CD
+
+`docker build -t healthz .`
+
+`docker run -d -p 8000:8000 healthz`
+
+### Monitoring
